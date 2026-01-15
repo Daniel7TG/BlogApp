@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const newsDescription = document.getElementById('news-description');
     const developersGrid = document.getElementById('developers-grid');
 
-    // Developers Data (Mock)
+    // Developers Data
     const developers = [
-        { name: "Alice Johnson", role: "Lead Developer", image: null },
-        { name: "Bob Smith", role: "UI/UX Designer", image: null },
-        { name: "Charlie Brown", role: "Backend Engineer", image: null },
-        { name: "Diana Prince", role: "Project Manager", image: null }
+        { name: "Claudia González" },
+        { name: "Miguel Marín" },
+        { name: "Heidi Ruiz" },
+        { name: "Daniel Torres" }
     ];
 
     // Fetch Articles Data
@@ -127,13 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
             name.className = 'developer-name';
             name.textContent = dev.name;
 
-            const role = document.createElement('p');
-            role.className = 'developer-role';
-            role.textContent = dev.role;
-
             card.appendChild(avatar);
             card.appendChild(name);
-            card.appendChild(role);
             developersGrid.appendChild(card);
         });
     }

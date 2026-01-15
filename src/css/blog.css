@@ -14,7 +14,7 @@
     --avatar-icon: #FFFFFF;
 
     /* Layout Variables */
-    --border-radius-large: 20px;
+    --border-radius-large: 10px;
     --border-radius-medium: 15px;
     --border-radius-small: 8px;
     --border-radius-round: 50%;
@@ -312,14 +312,7 @@ section h2 {
     font-size: 1rem;
     font-weight: 700;
     color: var(--primary-blue);
-    margin: 0 0 0.25rem 0;
-}
-
-.developer-role {
-    font-family: 'Public Sans', sans-serif;
-    color: var(--primary-orange);
-    font-weight: 600;
-    font-size: 0.8125rem;
+    margin: 0;
 }
 
 footer {
