@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App Mazahua</title>
+    <link rel="stylesheet" href="../css/blog.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="blog-header">
+        <div class="logo">Blog App Mazahua</div>
+        <nav>
+            <ul>
+                <li><a href="#timeline">Línea del Tiempo</a></li>
+                <li><a href="#developers">Equipo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="timeline" class="timeline-section">
+            <h2>Línea de Tiempo del Proyecto</h2>
+            <div class="timeline-container" id="timeline-container">
+                <!-- Timeline items will be injected here via JS -->
+            </div>
+        </section>
+
+        <section id="news-viewer" class="news-section">
+            <div class="news-card social-media-post" id="news-card">
+                <!-- Post Header -->
+                <div class="post-header">
+                    <div class="post-avatar">
+                        <img src="https://via.placeholder.com/50?text=AM" alt="App Mazahua" id="post-author-avatar">
+                    </div>
+                    <div class="post-info">
+                        <h3 class="post-author" id="post-author-name">Equipo App Mazahua</h3>
+                        <div class="post-metadata">
+                            <span class="post-date" id="news-date">Ahora</span>
+                            <span class="post-privacy-icon" aria-label="Público">🌎</span>
+                        </div>
+                    </div>
+                    <div class="post-options">
+                        <button class="icon-button" aria-label="Opciones">•••</button>
+                    </div>
+                </div>
+
+                <!-- Post Content -->
+                <div class="post-content">
+                    <h4 id="news-title" class="post-title">Bienvenido</h4>
+                    <p id="news-description">Haz clic en un evento de la línea de tiempo para ver los detalles.</p>
+                </div>
+
+                <!-- Post Media -->
+                <div class="post-media" id="news-images">
+                    <!-- Images will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="developers" class="developers-section">
+            <h2>Conoce al Equipo</h2>
+            <div class="developers-grid" id="developers-grid">
+                <!-- Developer cards will be injected here via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 App Mazahua. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/blog.js"></script>
+</body>
+
+</html>
