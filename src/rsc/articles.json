@@ -1,74 +1,64 @@
 [
-    {
-        "id": 1,
-        "title": "Inicio del Proyecto",
-        "description": "El inicio oficial del proyecto App Mazahua. El equipo se reunió para definir los requisitos y objetivos iniciales.",
-        "date": "2025-01-15",
-        "time": "09:00 AM",
-        "images": [
-            "kickoff.jpg"
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Primer Prototipo",
-        "description": "Finalización del primer prototipo funcional, con navegación básica y autenticación de usuarios.",
-        "date": "2025-02-10",
-        "time": "02:00 PM",
-        "images": [
-            "prototype_v1.jpg",
-            "prototype_ui.jpg"
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Lanzamiento Beta",
-        "description": "Lanzamiento de la versión beta para un grupo cerrado de probadores. Comienza la fase de recopilación de comentarios.",
-        "date": "2025-03-20",
-        "time": "11:00 AM",
-        "images": [
-            "beta_launch.jpg"
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Lanzamiento Beta",
-        "description": "Lanzamiento de la versión beta para un grupo cerrado de probadores. Comienza la fase de recopilación de comentarios.",
-        "date": "2025-03-20",
-        "time": "11:00 AM",
-        "images": [
-            "beta_launch.jpg"
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Lanzamiento Beta",
-        "description": "Lanzamiento de la versión beta para un grupo cerrado de probadores. Comienza la fase de recopilación de comentarios.",
-        "date": "2025-03-20",
-        "time": "11:00 AM",
-        "images": [
-            "beta_launch.jpg"
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Lanzamiento Beta",
-        "description": "Lanzamiento de la versión beta para un grupo cerrado de probadores. Comienza la fase de recopilación de comentarios.",
-        "date": "2025-03-20",
-        "time": "11:00 AM",
-        "images": [
-            "beta_launch.jpg"
-        ]
-    },
-    {
-        "id": 4,
-        "title": "Lanzamiento Oficial",
-        "description": "El lanzamiento público oficial de App Mazahua. Disponible en todas las plataformas principales.",
-        "date": "2025-05-01",
-        "time": "10:00 AM",
-        "images": [
-            "launch_party.jpg",
-            "app_store.jpg"
-        ]
-    }
+  {
+    "id": 2,
+    "title": "Primer Prototipo",
+    "description": "Finalización del primer prototipo funcional, con navegación básica y autenticación de usuarios.",
+    "date": "2025-02-10",
+    "time": "02:00 PM",
+    "images": [
+      "prototype_v1.jpg",
+      "prototype_ui.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Lanzamiento Beta",
+    "description": "Lanzamiento de la versión beta para un grupo cerrado de probadores. Comienza la fase de recopilación de comentarios.",
+    "date": "2025-03-20",
+    "time": "11:00 AM",
+    "images": [
+      "beta_launch.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Lanzamiento Beta",
+    "description": "Lanzamiento de la versión beta para un grupo cerrado de probadores. Comienza la fase de recopilación de comentarios.",
+    "date": "2025-03-20",
+    "time": "11:00 AM",
+    "images": [
+      "beta_launch.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Lanzamiento Beta",
+    "description": "Lanzamiento de la versión beta para un grupo cerrado de probadores. Comienza la fase de recopilación de comentarios.",
+    "date": "2025-03-20",
+    "time": "11:00 AM",
+    "images": [
+      "beta_launch.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Lanzamiento Beta",
+    "description": "Lanzamiento de la versión beta para un grupo cerrado de probadores. Comienza la fase de recopilación de comentarios.",
+    "date": "2025-03-20",
+    "time": "11:00 AM",
+    "images": [
+      "beta_launch.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Lanzamiento Oficial",
+    "description": "El lanzamiento público oficial de App Mazahua. Disponible en todas las plataformas principales.",
+    "date": "2025-05-01",
+    "time": "10:00 AM",
+    "images": [
+      "launch_party.jpg",
+      "app_store.jpg"
+    ]
+  }
 ]
