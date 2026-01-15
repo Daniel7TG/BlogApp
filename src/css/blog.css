@@ -16,8 +16,10 @@
     /* Layout Variables */
     --border-radius-large: 20px;
     --border-radius-medium: 15px;
-    --border-radius-image: 12px;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --border-radius-small: 8px;
+    --border-radius-round: 50%;
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --spacing-md: 1.5rem;
 }
 
@@ -38,7 +40,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-sm);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -112,7 +114,7 @@ section h2 {
     background: var(--card-background);
     padding: 1.5rem;
     border-radius: var(--border-radius-medium);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-sm);
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     border-left: 4px solid var(--primary-orange);
@@ -122,7 +124,7 @@ section h2 {
 .timeline-item:hover,
 .timeline-item.active {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-md);
     background-color: #fff5e6;
 }
 
@@ -153,7 +155,7 @@ section h2 {
 .social-media-post {
     background: var(--card-background);
     border-radius: var(--border-radius-large);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-sm);
     width: 100%;
     max-width: 680px;
     overflow: hidden;
@@ -174,7 +176,7 @@ section h2 {
     background-color: var(--avatar-background);
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: var(--border-radius-round);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,7 +185,7 @@ section h2 {
 .post-avatar img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: var(--border-radius-round);
     object-fit: cover;
 }
 
@@ -217,7 +219,7 @@ section h2 {
     color: var(--text-secondary);
     cursor: pointer;
     padding: 4px;
-    border-radius: 50%;
+    border-radius: var(--border-radius-round);
 }
 
 /* Post Content */
@@ -274,18 +276,19 @@ section h2 {
     border-radius: var(--border-radius-large);
     padding: 2rem;
     text-align: center;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-sm);
     transition: transform 0.3s;
 }
 
 .developer-card:hover {
     transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
 }
 
 .developer-avatar {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: var(--border-radius-round);
     background-color: var(--avatar-background);
     margin: 0 auto 1rem auto;
     display: flex;
