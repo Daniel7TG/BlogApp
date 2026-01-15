@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     // Fetch Articles Data
-    fetch('../rsc/articles.json')
+    fetch('/rsc/articles.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
