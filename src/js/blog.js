@@ -82,13 +82,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 img.src = `../rsc/img/${imgName}`;
                 img.alt = article.title;
                 img.onerror = () => {
-                    img.src = 'https://via.placeholder.com/800x600?text=No+Image'; // Social media images are usually larger
+                    img.src = ''; // Social media images are usually larger
                 };
                 newsImages.appendChild(img);
             });
         } else {
             const img = document.createElement('img');
-            img.src = 'https://via.placeholder.com/800x600?text=No+Image';
+            img.src = '';
             newsImages.appendChild(img);
         }
 
