@@ -1,16 +1,5 @@
 [
   {
-    "id": 2,
-    "title": "Primerrrrrrrrrrrr Prototipo",
-    "description": "Finalización del primer prototipo funcional, con navegación básica y autenticación de usuarios.",
-    "date": "2025-02-10",
-    "time": "00:00",
-    "images": [
-      "prototype_v1.jpg",
-      "prototype_ui.jpg"
-    ]
-  },
-  {
     "id": 4,
     "title": "Lanzamiento Oficial",
     "description": "El lanzamiento público oficial de App Mazahua. Disponible en todas las plataformas principales.",
