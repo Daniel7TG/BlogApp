@@ -86,11 +86,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 };
                 newsImages.appendChild(img);
             });
-        } else {
-            const img = document.createElement('img');
-            img.src = '';
-            newsImages.appendChild(img);
         }
+        //  else {
+        //     const img = document.createElement('img');
+        //     img.src = '';
+        //     newsImages.appendChild(img);
+        // }
 
         // Re-trigger animation
         newsCard.classList.remove('fade-in');
