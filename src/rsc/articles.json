@@ -1,16 +1,5 @@
 [
   {
-    "id": 5,
-    "title": "titulo",
-    "description": "descripcion",
-    "date": "2026-01-15",
-    "time": "00:44",
-    "images": [
-      ".webp",
-      ".webp"
-    ]
-  },
-  {
     "id": 6,
     "title": "titulo",
     "description": "desc",
