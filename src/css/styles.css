@@ -95,7 +95,7 @@ h6 {
 /* Main Feed Section */
 .feed-section {
     flex: 3;
-    /* Takes up 75% space approx */
+    /* Takes up 60% space approx */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -103,6 +103,14 @@ h6 {
     align-items: center;
     overflow: hidden;
     /* Hide overflow, embed handles scrolling if needed, or container */
+    background-color: var(--card-background);
+    /* White background like Facebook */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    margin: 20px 0 20px 20px;
+    /* Space from edges */
 }
 
 .embed-wrapper {
@@ -133,6 +141,23 @@ h6 {
     /* Allow Facebook to determine size or max-out but stay centered */
     max-width: 100%;
     min-width: 500px;
+}
+
+/* Phrase Section (Middle Column) */
+.phrase-section {
+    flex: 1;
+    /* Takes up 20% space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 3rem;
+    /* Elegant large font */
+    color: var(--primary-blue);
+    background: transparent;
+    text-align: center;
+    padding: 20px;
 }
 
 /* Sidebar Section */
@@ -231,6 +256,13 @@ div._2p3a {
     .feed-section {
         flex: none;
         height: 60vh;
+    }
+
+    .phrase-section {
+        flex: none;
+        height: auto;
+        padding: 40px 20px;
+        font-size: 2rem;
     }
 
     .sidebar-section {
