@@ -4,77 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Nts'i Fiyo</title>
-    <link rel="stylesheet" href="css/blog.css">
+    <title>Equipo App Mazahua - Nts'i Fiyo</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Public+Sans:wght@400;600&display=swap"
         rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="blog-header">
-        <div class="logo">Blog App Mazahua</div>
-        <nav>
-            <ul>
-                <li><a href="#timeline">Línea del Tiempo</a></li>
-                <li><a href="#developers">Equipo</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v24.0&appId=1941418316748080"></script>
 
-    <main>
-        <section id="timeline" class="timeline-section">
-            <h2>Línea de Tiempo del Proyecto</h2>
-            <div class="timeline-container" id="timeline-container">
-                <!-- Timeline items will be injected here via JS -->
-            </div>
-        </section>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">
+            Nts'i Fiyo
+        </a>
+        <a href="https://ntsifiyo.com" class="navbar-cta" target="_blank">Ir a la Aplicación</a>
+    </nav>
 
-        <section id="news-viewer" class="news-section">
-            <div class="news-card social-media-post" id="news-card">
-                <!-- Post Header -->
-                <div class="post-header">
-                    <div class="post-avatar">
-                        <img src="rsc/img/app-icon.png" alt="App Mazahua" id="post-author-avatar">
-                    </div>
-                    <div class="post-info">
-                        <h3 class="post-author" id="post-author-name">Equipo App Mazahua</h3>
-                        <div class="post-metadata">
-                            <span class="post-date" id="news-date">Ahora</span>
-                            <span class="post-privacy-icon" aria-label="Público">🌎</span>
-                        </div>
-                    </div>
-                    <div class="post-options">
-                        <button class="icon-button" aria-label="Opciones">•••</button>
-                    </div>
-                </div>
+    <!-- Main Content Container -->
+    <div class="content-wrapper">
 
-                <!-- Post Content -->
-                <div class="post-content">
-                    <h4 id="news-title" class="post-title">Bienvenido</h4>
-                    <p id="news-description">Haz clic en un evento de la línea de tiempo para ver los detalles.</p>
-                </div>
-
-                <!-- Post Media -->
-                <div class="post-media" id="news-images">
-                    <!-- Images will be injected here -->
+        <!-- Main Feed Area -->
+        <main class="feed-section">
+            <div class="embed-wrapper">
+                <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61587122027331"
+                    data-tabs="timeline" data-width="1500" data-height="648" data-small-header="false"
+                    data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/profile.php?id=61587122027331"
+                        class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/profile.php?id=61587122027331">Nts'i Fiyo</a>
+                    </blockquote>
                 </div>
             </div>
-        </section>
+        </main>
 
-        <section id="developers" class="developers-section">
-            <h2>Conoce al Equipo</h2>
-            <div class="developers-grid" id="developers-grid">
-                <!-- Developer cards will be injected here via JS -->
+        <!-- Sidebar / Team Section -->
+        <aside class="sidebar-section">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="team-list-lateral">
+                <div class="team-card lateral">
+                    <div class="team-name">Claudia</div>
+                    <div class="team-role">Colaborador</div>
+                </div>
+                <div class="team-card lateral">
+                    <div class="team-name">Miguel</div>
+                    <div class="team-role">Colaborador</div>
+                </div>
+                <div class="team-card lateral">
+                    <div class="team-name">Naomi</div>
+                    <div class="team-role">Colaborador</div>
+                </div>
+                <div class="team-card lateral">
+                    <div class="team-name">Oscar</div>
+                    <div class="team-role">Colaborador</div>
+                </div>
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 App Mazahua. Todos los derechos reservados.</p>
-    </footer>
+            <div class="sidebar-footer">
+                <h3>Contáctanos</h3>
+                <a href="mailto:contacto@ntsfiyo.com" class="contact-email">contacto@ntsfiyo.com</a>
+                <div class="copyright">
+                    &copy; 2026 App Mazahua
+                </div>
+            </div>
+        </aside>
 
-    <script src="js/blog.js"></script>
+    </div>
+
 </body>
 
 </html>

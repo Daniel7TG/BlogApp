@@ -1,0 +1,243 @@
+/* App Theme Colors */
+:root {
+    --primary-orange: #E65100;
+    --primary-blue: #1E3A8A;
+    --background-start: #A8E6CF;
+    --background-end: #FFF9C4;
+    --card-background: #FFFFFF;
+    --text-primary: #374151;
+    --text-secondary: #6B7280;
+    --avatar-background: #FFCC80;
+    --avatar-icon: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Prevent body scroll */
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    color: var(--text-primary);
+    background: linear-gradient(135deg, var(--background-start) 0%, var(--background-end) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-blue);
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Navbar (Fixed height) */
+.navbar {
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.navbar-cta {
+    background-color: var(--primary-orange);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(230, 81, 0, 0.3);
+}
+
+.navbar-cta:hover {
+    background-color: #F57C00;
+}
+
+/* Content Wrapper (Flex container for Main and Sidebar) */
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    /* Hide overflow of the wrapper itself */
+    height: calc(100vh - 60px);
+    /* Subtract navbar height */
+}
+
+/* Main Feed Section */
+.feed-section {
+    flex: 3;
+    /* Takes up 75% space approx */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Hide overflow, embed handles scrolling if needed, or container */
+}
+
+.embed-wrapper {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    overflow-y: auto;
+    /* Allow scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Start from top */
+}
+
+/* Force Facebook embed to adapt */
+/* Facebook embed adjustments */
+.fb-embed-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget iframe {
+    /* Allow Facebook to determine size or max-out but stay centered */
+    max-width: 100%;
+    min-width: 500px;
+}
+
+/* Sidebar Section */
+.sidebar-section {
+    flex: 1;
+    /* Takes up 25% space */
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* Allow scroll in sidebar if list is long */
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-blue);
+    text-align: center;
+}
+
+.team-list-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: auto;
+    /* Pushes footer down */
+}
+
+.team-card.lateral {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--primary-orange);
+    transition: transform 0.2s;
+}
+
+.team-card.lateral:hover {
+    transform: translateX(5px);
+}
+
+.team-name {
+    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.team-role {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.sidebar-footer h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact-email {
+    color: var(--primary-blue);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+div._2p3a {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        overflow-y: auto;
+        /* Enable scroll for mobile */
+    }
+
+    .feed-section {
+        flex: none;
+        height: 60vh;
+    }
+
+    .sidebar-section {
+        flex: none;
+        height: auto;
+        min-height: 40vh;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+}
